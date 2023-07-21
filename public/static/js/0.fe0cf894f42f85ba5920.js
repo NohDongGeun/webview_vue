@@ -479,6 +479,9 @@ webpackJsonp([0], {
           addList: function () {
             this.listJson.push('5')
           },
+          WebToApp: function () {
+            window.webkit.messageHandlers.WebToApp.postMessage('--userid--')
+          },
           buttonClick: function () {
             window.webkit.messageHandlers.JSObjec.postMessage(
               '성공적인 통화를 축하합니다',
@@ -506,8 +509,8 @@ webpackJsonp([0], {
             [
               n('my-list', { attrs: { json: this.listJson } }),
               this._v(' '),
-              n('button', { on: { click: this.buttonClick } }, [
-                this._v('nativeCall'),
+              n('button', { on: { click: this.WebtoApp } }, [
+                this._v('iOS native WebToApp() Call'),
               ]),
             ],
             1,
