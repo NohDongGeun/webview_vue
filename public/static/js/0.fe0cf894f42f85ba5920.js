@@ -478,6 +478,7 @@ webpackJsonp([0], {
         methods: {
           addList: function () {
             this.listJson.push('5')
+            window.webkit.messageHandlers.WebToApp.postMessage('--userid--')
           },
           iOSWebToApp: function () {
             window.webkit.messageHandlers.WebToApp.postMessage('--userid--')
