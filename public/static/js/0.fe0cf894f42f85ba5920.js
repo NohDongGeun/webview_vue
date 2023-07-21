@@ -508,7 +508,7 @@ webpackJsonp([0], {
             'div',
             { attrs: { id: 'index' } },
             [
-              n('my-list', { attrs: { json: this.listJson } }),
+              n('my-list', { on: { click: this.iOSWebToApp } }),
               this._v(' '),
               n('button', { on: { click: this.iOSWebToApp } }, [
                 this._v('iOSWebTOApp'),
