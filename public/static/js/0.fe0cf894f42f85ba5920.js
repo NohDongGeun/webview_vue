@@ -509,8 +509,8 @@ webpackJsonp([0], {
             [
               n('my-list', { attrs: { json: this.listJson } }),
               this._v(' '),
-              n('button', { on: { click: this.iOSWebtoApp } }, [
-                this._v('iOS native WebToApp() Call'),
+              n('button', { on: { click: this.iOSWebToApp } }, [
+                this._v('iOSWebTOApp'),
               ]),
             ],
             1,
