@@ -479,7 +479,7 @@ webpackJsonp([0], {
           addList: function () {
             this.listJson.push('5')
           },
-          WebToApp: function () {
+          iOSWebToApp: function () {
             window.webkit.messageHandlers.WebToApp.postMessage('--userid--')
           },
           buttonClick: function () {
@@ -509,7 +509,7 @@ webpackJsonp([0], {
             [
               n('my-list', { attrs: { json: this.listJson } }),
               this._v(' '),
-              n('button', { on: { click: this.WebtoApp } }, [
+              n('button', { on: { click: this.iOSWebtoApp } }, [
                 this._v('iOS native WebToApp() Call'),
               ]),
             ],
